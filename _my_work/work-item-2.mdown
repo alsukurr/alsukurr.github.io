@@ -1,7 +1,0 @@
----
-work_title:  "Mirum WORK"
-work_tag: "2016 work"
-work_url: "http://alsukurr.com/mirum_work"
-work_desc: "Projects I worked on at Mirum Inc."
-work_img: "img/cuteee.jpg"
----
