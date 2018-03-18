@@ -1,6 +1,3 @@
-# Ignore everything
-*
-
-# Exclude 
-!.gitignore
-!_site/* 
+node_modules/
+.sass-cache
+_site/
