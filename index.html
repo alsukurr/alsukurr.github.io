@@ -1,129 +1,147 @@
----
-layout: default
----
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Alsu Kurbanova . code & design . all things web . </title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="Alsu Kurbanova . all things web . code & design">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" type="text/css" href="./assets/main.css">
+  <link rel="icon" href="favicon.png" />
+  <!-- FB OPENGRAPH -->
+<meta property="og:type" content="website"/>
 
- <!-- <a href="{{ site.baseurl }}/blog">blog</a> -->
+<meta property="og:site_name" content="Alsu Kurbanova "/>
+<meta property="og:title" content="Alsu Kurbanova "/>
+<meta property="og:description" content="Alsu Kurbanova . all things web . code & design"/>
 
-<!-- draggable -->
-<div class="wrapper">
-  <section class="draggable">
+<!-- TWITTER CARD -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Alsu Kurbanova "/>
 
-     <div class="drag drag_1" draggable="true">
-       <h3 class="message-of-day"></h3>
-     </div>
-     <div class="drag drag_2">
-       <p>Front end developer &#38; designer</p>
-       <!-- <p>Toronto, Canada</p> -->
-       <p>engaging &#38; <span>beautiful</span> user experiences</p>
-       <span class="info">
-         <p>Montreal, Canada</p>
-         <p>tea &#65310; coffee</p>
-         <!-- <p>made of 80% sweet potato</p> -->
-       </span>
-       <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores fugit voluptate</p> -->
-     </div>
-     <!-- <div class="drag drag_3"></div> -->
-     <h1 class="drag drag_4" id="logo">ALSU KURR </h1>
+<!-- GOOGLE PLUS -->
+<meta itemprop="name" content="Alsu Kurbanova "/>
+<meta itemprop="description" content="Alsu Kurbanova . all things web . code & design "/>
 
-  </section>
-</div>
-
-<!-- about -->
-  <section class="about">
-   <h2 class="section_header">About Me</h2>
-   <div class="wrapper">
-      <p>I love to solve problems and advocate ideas using the power of code &#38; design.  I fell in love with coding during a <a href="http://ladieslearningcode.com/" target="_blank">Ladies Learning Code</a> workshop, because I realized I could bring any design idea to life and that was so impactful.</p> 
-      <p><span>Learning by doing:</span> I am keeping myself busy working on a couple different projects, and currenly I am staying focused on improving my ReactJS and Vue.JS chops.
-      <p>Outside of a browser window, I give back by 🌟&nbsp;igniting🌟 other creative minds as a mentor for LLC, get my vitamin D by 🏃🏻&nbsp;running🏃🏻, explore the world by learning 👋🏻&nbsp;French👋🏻  and fulfill my fashion designer dream by 👗&nbsp;DIYing👗  a big chunk of my wardrobe.  I’m inspired by the idea of creating things that prioritize functionality and beauty, and this is how I approach every project. </p>
-      <p>Let’s build together!</p>
-   </div>
-
- </section>
-
-<!-- work -->
- <section class="work">
-     <h2 class="section_header">Selected Work</h2>
-
-     {% for work in site.my_work %}
-
-     <div class="work_item" style="background-image: url({{work.work_img}})">
-        <h3 class="main_item_title">{{work.work_title}}
-        <!-- <i class="fa fa-twitter fa-lg fa-fw"></i> -->
-        </h3>
-
-        <div class="work_item_details">
-          <h4 class="work_title">{{work.work_title}} </h4>
-          <p class="work_desc">{{work.work_desc}}</p>
-          <p class="work_tag">{{work.work_tag}}</p>
-          <div class="work_url_container">
-            <a href="{{work.work_url}}" target="_blank" class="work_url">View work</a>
-              <!-- <img class="x-img service-icon x-img-none" src="img/eye.svg"> -->
-            <svg viewBox="0 0 259 156.25" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs>
-              
-            </defs><g><path class="fil0" d="M0 65c89,-86 169,-87 259,0 -90,81 -170,80 -259,0zm176 -42c19,23 19,57 -1,80 21,-8 42,-21 63,-39 -21,-19 -41,-32 -62,-41zm-92 80c-20,-23 -20,-57 -1,-80 -21,9 -42,22 -62,41 21,18 42,31 63,39zm78 -73c-29,-30 -79,-9 -79,33 0,41 50,62 79,33 19,-19 19,-48 0,-66z"/><path class="fil1" d="M129 30c-18,0 -32,15 -32,33 0,18 14,32 32,32 22,0 38,-21 32,-41 -6,16 -30,12 -30,-5 0,-8 5,-14 13,-16 -5,-2 -9,-3 -15,-3z"/></g>
-            </svg>
-          </div>
-          
+</head>
+<body>
+  <div id='application'>
+    <section id="cover">
+        <div class="cover-wrapper">
+            <div class="cover-inner">
+                <h2>Alsu Kurbanova . Code & Design</h2>
+            </div>
         </div>
-     </div>
+    </section>
 
-     <div class="work_item_mobile">
-       <div class="work_item_details">
-         <h4 class="work_title">{{work.work_title}} </h4>
-         <p class="work_desc">{{work.work_desc}}</p>
-         <p class="work_tag">{{work.work_tag}}</p>
-         <div class="work_url_container">
-           <a href="{{work.work_url}}" target="_blank" class="work_url">View work</a>
-             <!-- <img class="x-img service-icon x-img-none" src="img/eye.svg"> -->
-           <svg viewBox="0 0 259 156.25" x="0px" y="0px" fill-rule="evenodd" clip-rule="evenodd"><defs>
-             
-           </defs><g><path class="fil0" d="M0 65c89,-86 169,-87 259,0 -90,81 -170,80 -259,0zm176 -42c19,23 19,57 -1,80 21,-8 42,-21 63,-39 -21,-19 -41,-32 -62,-41zm-92 80c-20,-23 -20,-57 -1,-80 -21,9 -42,22 -62,41 21,18 42,31 63,39zm78 -73c-29,-30 -79,-9 -79,33 0,41 50,62 79,33 19,-19 19,-48 0,-66z"/><path class="fil1" d="M129 30c-18,0 -32,15 -32,33 0,18 14,32 32,32 22,0 38,-21 32,-41 -6,16 -30,12 -30,-5 0,-8 5,-14 13,-16 -5,-2 -9,-3 -15,-3z"/></g>
-           </svg>
-         </div>
-       </div>
-     </div>
+    <section id="header" class="block">
+        <header class="header-nav">
+            <nav>
+            <ul>
+                <li><a class="about-button" href='#about'>
+                <span> About Alsu Kurbanova</span>
+                <span class='email'>k.alsu(at)me.com</span>
+                <span> close</span>
 
-     {% endfor %}
+                </a></li>
+                <li class="quick-link back-to-top hide"><a class="scrollto" href='#header'>Go to top</a></li>
+                <li class="quick-link scroll-down hide"><a class="scrollto" href='#project-list'>Scroll down</a></li>
+            </ul>
+            </nav>
+        </header>
 
- </section>
+        <h1><p>Code & Design<br /> All Things Web <br />Montreal&nbsp;</p></h1>
+            <ul class='project-dots'>
+            </ul>
+        
 
- <section class="stuff">
-  <h2 class="section_header">Skills &#38; Tools  <!-- <i class="fa fa-magic" aria-hidden="true"></i> --></h2>
-  <div class="wrapper">
-    <ul>
-      <h3>Skills</h3>
-      <li>HTML, CSS, Sass</li>
-      <li>Javascript &#38; Jquery</li>
-      <li>ReactJS</li>
-      <li>Wordpress &#38; PHP</li>
-      <li>AJAX APIs</li>
-      <li>Jekyll &#38; Liquid</li>
-    </ul>
-    <ul>
-      <h3>Tools</h3>
-      <li>Grunt &#38; Gulp</li>
-      <li>Git &#38; Github</li>
-      <li>Sketch &#38; Illustrator</li>
-      <li>Sublime Text</li>
-      <li>Russian</li>
-    </ul>
-    <ul>
-      <h3>Currently learning</h3>
-      <li>Vue.JS</li>
-      <li>French (halp me!)</li>
-    </ul>
 
-    <!-- <p>skills, tools, learning</p> -->
-  </div>
- </section>
+        <section class="popin-about">
+            <div class="inner-popin-about block margin-block">
+                <h3>About Alsu</h3>
+                <div class="block-text">
+                    <p>I love to solve problems and advocate ideas using the power of code &#38; design. I fell in love with coding during a <a href="http://ladieslearningcode.com/" target="_blank">Ladies Learning Code</a> (LLC) workshop, because I realize I could bring ANY design idea to life. That pretty much blew my mind.</p>
+                    <p><span>Learning by doing:</span> I am keeping myself busy working on a couple different projects, and currenly I am staying focused on improving my ReactJS and Vue.JS chops.</p> 
+                    <p>Outside of a browser window, I split my time between leading LLC workshops and hopefully ✨igniting✨ other creative minds, exploring all the wonderful exceptions of the 🇫🇷French🇫🇷 language (halp!) and forever struggling to keep my 🌵plant babies🌵 alive. </p>
+                    <p>I’m inspired by the idea of creating things that prioritize functionality and beauty, and this is how I approach every project.</p>
+                    <h5>SSENSE . Freelance . Mirum Inc . TAXI . Blast Radius . HackerYou .</h5>
+                    <p>Let’s build together!</p>
+                </div>
+            </div>
+        </section>
+    </section>
 
-<section class="contact">
-  <h2 class="section_header">Contact</h2>
-  <div class="wrapper">
-    <a href="mailto:k.alsu@me.com?Subject=Just%20saying%20hi&body=Hi%20Alsu,%20my%20name%20is%20...%20and%20here%20is%20me%20writing%20to%20you..." class="contact_me">k.alsu@me.com</a>
-    <!-- <a href="mailto:someone@yoursite.com?cc=someoneelse@theirsite.com, another@thatsite.com, me@mysite.com&bcc=lastperson@theirsite.com&subject=Big%20News&body=Body-goes-here">Email Us</a> -->
+    <section id="project-list" class="block white-block margin-block">
+        <div class='project-type-list'>
+            <h5>Selected Projects</h5>
+            <ul>
+                <li>
+                    <a class="scrollto" target="_blank" href="http://alsukurr.com/taxi_work"
+                        data-id="5a146d2a3e6dddoc1815578707"
+                        data-background="#AAFFE4"
+                        data-color="#000">
+                        TAXI</a>
+                </li>
+                <li>
+                    <a class="scrollto" target="_blank" href="http://alsukurr.com/mirum_work"
+                        data-id="596e512a6837cdoc286406178"
+                        data-background="#E25186"
+                        data-color="#fff">
+                        Mirum</a>
+                </li>
+                <li>
+                    <a class="scrollto" target="_blank" href="http://alsukurr.com/lala"
+                        data-id="5a1470298a244doc960997932"
+                        data-background="#FFB5A8" 
+                        data-color="000">
+                        La La My Day</a>
+                </li>
+                <li>
+                    <a class="scrollto" target="_blank" href="http://c4church.com"
+                        data-id="5a14726daf536doc1558776044"
+                        data-background="#B2ABD9"
+                        data-color="#fff">
+                        C4 Church</a>
+                </li>
+                <li>
+                    <a class="scrollto" target="_blank" href="http://alsukurr.com/eat_no_kale"
+                        data-id="5a14714ab7c73doc569183201"
+                        data-background="#AD2B45"
+                        data-color="#fff">
+                        Eat No Kale</a>
+                </li>
 
-  </div>
+            </ul>
+        </div>
+    </section>
 
-</section>
+    <section id="skills" class="block margin-block">
+        <h5>Skills and Interests</h5>
+        <ul>
+            <li>HTML & CSS & Javascript</li>
+            <li>React.JS & Three.js</li>
+            <li>Wordpress API</li>
+            <li>Jekyll & Shopify Liquid</li>
+            <li>System design</li>
+            <li>Mobile & Responsive design</li>
+            <li>Typography</li>
+            <li>Visual Studio Code</li>
+            <li>Sketch & Adobe CS</li>
+            <li>Git</li>
+        </ul>
+    </section>
 
+    <section id="contact" class="block margin-block">
+        <h5>Drop me a line</h5>
+        <h3>k.alsu(at)me.com</h3>
+        <ul>
+            <li><a href="https://ca.linkedin.com/in/alsukurbanova" target="_blank">Linkedin</a></li>
+            <li><a href="https://github.com/alsukurr" target="_blank">Github</a></li>
+            <li><a href="http://codepen.io/alsukurr/" target="_blank">Codepen</a></li>
+            <li><a href="https://www.instagram.com/alsukurr" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+</div>
+<script type="text/javascript" src="./assets/app.js"></script>
+</body>
+</html>
